@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem", "OrderManagementSystem.csproj", "{A3A7CF17-FC6E-4B9B-8F33-8BD34A2CD1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.Domain", "..\OrderManagementSystem.Domain\OrderManagementSystem.Domain.csproj", "{BC92BE46-D927-4191-BE50-A8DE348E54E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.DAL", "..\OrderManagementSystem.DAL\OrderManagementSystem.DAL.csproj", "{FBDAEF15-AAC8-4E5F-9041-3FD31439FFCB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC92BE46-D927-4191-BE50-A8DE348E54E8} = {BC92BE46-D927-4191-BE50-A8DE348E54E8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.BLL", "..\OrderManagementSystem.BLL\OrderManagementSystem.BLL.csproj", "{8126BBB7-7766-42D1-9531-E461326BF911}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC92BE46-D927-4191-BE50-A8DE348E54E8} = {BC92BE46-D927-4191-BE50-A8DE348E54E8}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.API", "..\OrderManagementSystem.API\OrderManagementSystem.API.csproj", "{DE2BD732-AF80-4D85-BC7E-559953C270CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8126BBB7-7766-42D1-9531-E461326BF911} = {8126BBB7-7766-42D1-9531-E461326BF911}
+		{BC92BE46-D927-4191-BE50-A8DE348E54E8} = {BC92BE46-D927-4191-BE50-A8DE348E54E8}
+		{FBDAEF15-AAC8-4E5F-9041-3FD31439FFCB} = {FBDAEF15-AAC8-4E5F-9041-3FD31439FFCB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3A7CF17-FC6E-4B9B-8F33-8BD34A2CD1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3A7CF17-FC6E-4B9B-8F33-8BD34A2CD1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3A7CF17-FC6E-4B9B-8F33-8BD34A2CD1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3A7CF17-FC6E-4B9B-8F33-8BD34A2CD1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC92BE46-D927-4191-BE50-A8DE348E54E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC92BE46-D927-4191-BE50-A8DE348E54E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC92BE46-D927-4191-BE50-A8DE348E54E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC92BE46-D927-4191-BE50-A8DE348E54E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBDAEF15-AAC8-4E5F-9041-3FD31439FFCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDAEF15-AAC8-4E5F-9041-3FD31439FFCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDAEF15-AAC8-4E5F-9041-3FD31439FFCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDAEF15-AAC8-4E5F-9041-3FD31439FFCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8126BBB7-7766-42D1-9531-E461326BF911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8126BBB7-7766-42D1-9531-E461326BF911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8126BBB7-7766-42D1-9531-E461326BF911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8126BBB7-7766-42D1-9531-E461326BF911}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2BD732-AF80-4D85-BC7E-559953C270CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2BD732-AF80-4D85-BC7E-559953C270CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2BD732-AF80-4D85-BC7E-559953C270CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2BD732-AF80-4D85-BC7E-559953C270CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E72772B-B3E8-4F4C-8D50-6AD6B7310C8A}
+	EndGlobalSection
+EndGlobal
