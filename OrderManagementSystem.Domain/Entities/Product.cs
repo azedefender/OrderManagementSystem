@@ -1,0 +1,15 @@
+﻿namespace OrderManagementSystem.Domain.Entities;
+
+public class Product
+{
+    public int ProductId { get; set; }
+    public int CategoryId { get; set; }
+
+    public ProductCategory Category { get; set; } = null!;
+
+    public string Name { get; set; } = null!;
+    public string SKU { get; set; } = null!;
+    public decimal Price { get; set; }
+
+    public bool IsActive { get; set; }
+}
